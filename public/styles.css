@@ -1,0 +1,63 @@
+/* =====
+Layout
+===== */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+button {
+	border: none;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+	background-color: inherit;
+}
+
+ul {
+	list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+}
+
+/* header */
+header, ul {
+    display: flex;
+}
+
+header {
+    position: sticky; top: 0px;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    max-width: 106px;
+    height: 40px;
+}
+
+/* hero section */
+.hero {
+    background-image: url(./assets/rectangle\ 2.png);
+    margin: 0 1rem 2rem;
+}
+
+/* blog section */
+/* =======
+Typography
+======= */
+
