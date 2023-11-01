@@ -48,16 +48,11 @@ ul {
 	gap: 0.75rem;
 }
 /* section containers */
-header,
-main {
-    margin:0 max(2rem, 8%);
-}
-
 .container__header,
 .hero,
 .blog {
-	max-width: 1100px;
-    margin: 0 auto 5rem;
+    max-width: 1200px;
+    margin: 0 max(2rem, 8%) 5rem;
 }
 
 .container__header {
@@ -322,7 +317,7 @@ Media
 Animation 
 ======= */
 .btn__arrow {
-    animation: bounce 0.9s cubic-bezier(.2, .65, .6, 1) 2 both;
+    animation: bounce 0.9s 1s cubic-bezier(.2, .65, .6, 1) 2 both;
 }
 
 @keyframes bounce {
