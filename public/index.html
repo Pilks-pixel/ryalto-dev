@@ -49,6 +49,7 @@
 					src="../assets/ryalto-logo-lg.png"
 					alt="ryalto logo"
 				/>
+                <!-- Would Use Javascript to Toggle Nav On Mobile Screens -->
 				<button
 					class="header__toggle"
 					aria-label="mobile menu toggle"
@@ -65,44 +66,25 @@
 				</nav>
 			</div>
 		</header>
+
 		<main>
 			<section class="hero">
 				<p class="hero__sub_title">Welcome to The</p>
 				<h1 class="hero__title">Ryalto Developer Page</h1>
 				<p class="hero__tagline">
-					we're really proud of our tack team here at rialto. this is a page for
+					We're really proud of our tack team here at Ryalto. this is a page for
 					us to share what we're getting up to in the background!
 				</p>
-				<button class="hero__btn">
+				<a class="hero__btn" href="#blog">
 					<span class="btn__text">Discover More</span>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="48"
-						height="49"
-						viewBox="0 0 48 49"
-						fill="none"
-					>
-						<path
-							d="M14.2035 26.676L24.1471 36.6L34.0711 26.6564"
-							stroke="#2899F0"
-							stroke-width="3"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
-						<path
-							d="M14.1898 12.7686L24.1334 22.6926L34.0574 12.749"
-							stroke="#2899F0"
-							stroke-width="3"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
-					</svg>
-				</button>
+					<img class="btn__arrow" src="./assets/icons/chevrons-up.png" alt="scroll arrow">
+                </a>
 			</section>
+
 			<section class="blog" id="blog">
 				<h2 class="blog__title">See Our Latest Blogs</h2>
 				<div class="blog__grid">
-					<!-- Cards Can Be Dynamically Fetched From Database -->
+					<!-- Cards Would Be Dynamically Fetched From Database -->
 
 					<div class="grid__card">
 						<img
