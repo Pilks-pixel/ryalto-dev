@@ -4,116 +4,263 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="Realtor Developer Page" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-			integrity="sha512-0tjxaxAptf1qUCxFrM0q78v8NZwXlH2P5JFeGFXTT1UnV9d9QFidrZBBn21qyBkFroOnjnKdA1beSU9flSedcaQ=="
-			crossorigin="anonymous"
-		/>
 		<link rel="stylesheet" href="./styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;800&display=swap"
+			rel="stylesheet"
+		/>
 		<title>Realtor Developer Page</title>
 	</head>
 	<body>
 		<header>
-			<div class="header__social">icons</div>
-			<img
-				class="header__logo"
-				src="../assets/ryalto-logo-lg.png"
-				alt="ryalto logo"
-			/>
-			<nav>
-				<ul>
-					<li>Blog</li>
-					<li>Our Team</li>
-					<li>Careers</li>
-				</ul>
-			</nav>
+			<div class="container__header">
+				<div class="header__social">
+					<ul>
+						<li>
+							<a href="https://www.ryaltogroup.com/" target="_blank"
+								><img
+									class="social__icon"
+									src="./assets/icons/globe.svg"
+									alt="ryalto website"
+							/></a>
+						</li>
+						<li>
+							<a href="https://github.com/ryalto" target="_blank"
+								><img
+									class="social__icon"
+									src="./assets/icons/github.svg"
+									alt="GitHub"
+							/></a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/company/ryalto/" target="_blank"
+								><img
+									class="social__icon"
+									src="./assets/icons/linked.svg"
+									alt="linkedin"
+							/></a>
+						</li>
+					</ul>
+				</div>
+				<img
+					class="header__logo"
+					src="../assets/ryalto-logo-lg.png"
+					alt="ryalto logo"
+				/>
+				<!-- Would Use Javascript to Toggle Nav On Mobile Screens -->
+				<button
+					class="header__toggle"
+					aria-label="mobile menu toggle"
+					aria-controls="nav--mobile"
+				>
+					<span class="sr"></span>
+				</button>
+				<nav>
+					<ul id=" ">
+						<li><a href="#blog">Blog</a></li>
+						<li><a href="/team">Our Team</a></li>
+						<li><a href="/careers">Careers</a></li>
+					</ul>
+				</nav>
+			</div>
 		</header>
+
 		<main>
 			<section class="hero">
 				<p class="hero__sub_title">Welcome to The</p>
-				<h1 class="hero__title">Ryato Developer Page</h1>
+				<h1 class="hero__title">Ryalto Developer Page</h1>
 				<p class="hero__tagline">
-					we're really proud of our tack team here at rialto. this is a page for
+					We're really proud of our tack team here at Ryalto. this is a page for
 					us to share what we're getting up to in the background!
 				</p>
-				<button>
-					Discover More
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="48"
-						height="49"
-						viewBox="0 0 48 49"
-						fill="none"
-					>
-						<path
-							d="M14.2035 26.676L24.1471 36.6L34.0711 26.6564"
-							stroke="#2899F0"
-							stroke-width="3"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
-						<path
-							d="M14.1898 12.7686L24.1334 22.6926L34.0574 12.749"
-							stroke="#2899F0"
-							stroke-width="3"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
-					</svg>
-				</button>
+				<a class="hero__btn" href="#blog">
+					<span class="btn__text">Discover More</span>
+					<img
+						class="btn__arrow"
+						src="./assets/icons/chevrons-up.png"
+						alt="scroll arrow"
+					/>
+				</a>
 			</section>
-            <section class="blog">
-                <h2>See Our Latest Blogs</h2>
-                <div class="blog__grid">
-                    <!-- Cards Can Be Dynamically Fetched From Database -->
-                    <div class="grid__card">
-                        <img src="./assets/cards/git.png" alt="example article">
-                        <article>
-                            <h3>Migrating to Github actions for rails CI</h3>
-                            <p>RubyCI is tragically shutting down, so I am migrating to Rails CI</p>
-                            <div>
-                                <aside>
-                                    <img src="./assets/cards/avatar.png" alt="example avatar">
-                                    <p>Phil</p>
-                                    <p>October 2nd 2022</p>
-                                </aside>
-                                <a href="">Read More</a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="grid__card">
-                        <img src="./assets/cards/git.png" alt="example article">
-                        <article>
-                            <h3>Migrating to Github actions for rails CI</h3>
-                            <p>RubyCI is tragically shutting down, so I am migrating to Rails CI</p>
-                            <div>
-                                <aside>
-                                    <img src="./assets/cards/avatar.png" alt="example avatar">
-                                    <p>Phil</p>
-                                    <p>October 2nd 2022</p>
-                                </aside>
-                                <a href="">Read More</a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="grid__card">
-                        <img src="./assets/cards/avatar.png" alt="example avatar">
-                        <article>
-                            <h3>Migrating to Github actions for rails CI</h3>
-                            <p>RubyCI is tragically shutting down, so I am migrating to Rails CI</p>
-                            <div>
-                                <aside>
-                                    <img src="" alt="">
-                                    <p>Phil</p>
-                                    <p>October 2nd 2022</p>
-                                </aside>
-                                <a href="">Read More</a>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </section>
+
+			<section class="blog" id="blog">
+				<h2 class="blog__title">See Our Latest Blogs</h2>
+				<div class="blog__grid">
+					<!-- Cards Would Be Dynamically Fetched From Database -->
+
+					<div class="grid__card">
+						<picture>
+							<source srcset="./assets/cards/git.webp" />
+
+							<img
+								class="card__img"
+								src="./assets/cards/git.png"
+								alt="example article"
+							/>
+						</picture>
+						<article class="card__content">
+							<h3 class="content__title">
+								Migrating to Github actions for rails CI
+							</h3>
+							<p class="content__text">
+								RubyCI is tragically shutting down, so I am migrating to Rails
+								CI
+							</p>
+							<div class="content__info">
+								<img src="./assets/cards/avatar.png" alt="example avatar" />
+								<aside class="info__aside">
+									<p>Phil</p>
+									<p>October 2nd 2022</p>
+								</aside>
+								<a href="">Read More</a>
+							</div>
+						</article>
+					</div>
+
+					<div class="grid__card">
+						<picture>
+							<source srcset="./assets/cards/mobileshot.webp" />
+
+							<img
+								class="card__img"
+								src="./assets/cards/mobileshot.png"
+								alt="example article"
+							/>
+						</picture>
+						<article class="card__content">
+							<h3 class="content__title">
+								Migrating to Github actions for rails CI
+							</h3>
+							<p class="content__text">
+								RubyCI is tragically shutting down, so I am migrating to Rails
+								CI
+							</p>
+							<div class="content__info">
+								<img src="./assets/cards/avatar.png" alt="example avatar" />
+								<aside class="info__aside">
+									<p>Phil</p>
+									<p>October 2nd 2022</p>
+								</aside>
+								<a href="">Read More</a>
+							</div>
+						</article>
+					</div>
+					<div class="grid__card">
+						<picture>
+							<source srcset="./assets/cards/opengraph.webp" />
+
+							<img
+								class="card__img"
+								src="./assets/cards/opengraph.png"
+								alt="example article"
+							/>
+						</picture>
+						<article class="card__content">
+							<h3 class="content__title">
+								Migrating to Github actions for rails CI
+							</h3>
+							<p class="content__text">
+								RubyCI is tragically shutting down, so I am migrating to Rails
+								CI
+							</p>
+							<div class="content__info">
+								<img src="./assets/cards/avatar.png" alt="example avatar" />
+								<aside class="info__aside">
+									<p>Phil</p>
+									<p>October 2nd 2022</p>
+								</aside>
+								<a href="">Read More</a>
+							</div>
+						</article>
+					</div>
+					<div class="grid__card">
+						<picture>
+							<source srcset="./assets/cards/hotwire.webp" />
+
+							<img
+								class="card__img"
+								src="./assets/cards/hotwire.png"
+								alt="example article"
+							/>
+						</picture>
+						<article class="card__content">
+							<h3 class="content__title">
+								Migrating to Github actions for rails CI
+							</h3>
+							<p class="content__text">
+								RubyCI is tragically shutting down, so I am migrating to Rails
+								CI
+							</p>
+							<div class="content__info">
+								<img src="./assets/cards/avatar.png" alt="example avatar" />
+								<aside class="info__aside">
+									<p>Phil</p>
+									<p>October 2nd 2022</p>
+								</aside>
+								<a href="">Read More</a>
+							</div>
+						</article>
+					</div>
+					<div class="grid__card">
+						<picture>
+							<source srcset="./assets/cards/upgrade.webp" />
+
+							<img
+								class="card__img"
+								src="./assets/cards/upgrade.png"
+								alt="example article"
+							/>
+						</picture>
+						<article class="card__content">
+							<h3 class="content__title">
+								Migrating to Github actions for rails CI
+							</h3>
+							<p class="content__text">
+								RubyCI is tragically shutting down, so I am migrating to Rails
+								CI
+							</p>
+							<div class="content__info">
+								<img src="./assets/cards/avatar.png" alt="example avatar" />
+								<aside class="info__aside">
+									<p>Phil</p>
+									<p>October 2nd 2022</p>
+								</aside>
+								<a href="">Read More</a>
+							</div>
+						</article>
+					</div>
+					<div class="grid__card">
+						<picture>
+							<source srcset="./assets/cards/theme.webp" />
+
+							<img
+								class="card__img"
+								src="./assets/cards/theme.png"
+								alt="example article"
+							/>
+						</picture>
+						<article class="card__content">
+							<h3 class="content__title">
+								Migrating to Github actions for rails CI
+							</h3>
+							<p class="content__text">
+								RubyCI is tragically shutting down, so I am migrating to Rails
+								CI
+							</p>
+							<div class="content__info">
+								<img src="./assets/cards/avatar.png" alt="example avatar" />
+								<aside class="info__aside">
+									<p>Phil</p>
+									<p>October 2nd 2022</p>
+								</aside>
+								<a href="">Read More</a>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
 		</main>
 	</body>
 </html>
