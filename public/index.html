@@ -15,24 +15,55 @@
 	</head>
 	<body>
 		<header>
-            <div class="container__header">
-
-                <div class="header__social">
-                    <img src="./assets/globe.svg" alt="globe">
-                </div>
-                <img
-				class="header__logo"
-				src="../assets/ryalto-logo-lg.png"
-				alt="ryalto logo"
-                />
-                <nav>
-                    <ul>
-                        <li>Blog</li>
-                        <li>Our Team</li>
-                        <li>Careers</li>
-                    </ul>
-                </nav>
-            </div>
+			<div class="container__header">
+				<div class="header__social">
+					<ul>
+						<li>
+							<a href="https://www.ryaltogroup.com/" target="_blank"
+								><img
+									class="social__icon"
+									src="./assets/icons/globe.svg"
+									alt="ryalto website"
+							/></a>
+						</li>
+						<li>
+							<a href="https://github.com/ryalto" target="_blank"
+								><img
+									class="social__icon"
+									src="./assets/icons/github.svg"
+									alt="GitHub"
+							/></a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/company/ryalto/" target="_blank"
+								><img
+									class="social__icon"
+									src="./assets/icons/linked.svg"
+									alt="linkedin"
+							/></a>
+						</li>
+					</ul>
+				</div>
+				<img
+					class="header__logo"
+					src="../assets/ryalto-logo-lg.png"
+					alt="ryalto logo"
+				/>
+				<button
+					class="header__toggle"
+					aria-label="mobile menu toggle"
+					aria-controls="nav--mobile"
+				>
+                    <span class="sr"></span>
+                </button>
+				<nav>
+					<ul id=" ">
+						<li><a href="#blog">Blog</a></li>
+						<li><a href="/team">Our Team</a></li>
+						<li><a href="/careers">Careers</a></li>
+					</ul>
+				</nav>
+			</div>
 		</header>
 		<main>
 			<section class="hero">
@@ -68,67 +99,84 @@
 					</svg>
 				</button>
 			</section>
-			<section class="blog">
+			<section class="blog" id="blog">
 				<h2 class="blog__title">See Our Latest Blogs</h2>
 				<div class="blog__grid">
 					<!-- Cards Can Be Dynamically Fetched From Database -->
-					
-                
-                    <div class="grid__card">
-                        <img class="card__img" src="./assets/cards/git.png" alt="example article" />
-                        <article class="card__content">
-                            <h3 class="content__title">Migrating to Github actions for rails CI</h3>
-                            <p class="content__text">
-                                RubyCI is tragically shutting down, so I am migrating to Rails
-                                CI
-                            </p>
-                            <div class="content__info">
-                                <img src="./assets/cards/avatar.png" alt="example avatar" />
-                                <aside class="info__aside">
-                                    <p>Phil</p>
-                                    <p>October 2nd 2022</p>
-                                </aside>
-                                <a href="">Read More</a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="grid__card">
-                        <img class="card__img" src="./assets/cards/git.png" alt="example article" />
-                        <article class="card__content">
-                            <h3 class="content__title">Migrating to Github actions for rails CI</h3>
-                            <p class="content__text">
-                                RubyCI is tragically shutting down, so I am migrating to Rails
-                                CI
-                            </p>
-                            <div class="content__info">
-                                <img src="./assets/cards/avatar.png" alt="example avatar" />
-                                <aside class="info__aside">
-                                    <p>Phil</p>
-                                    <p>October 2nd 2022</p>
-                                </aside>
-                                <a href="">Read More</a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="grid__card">
-                        <img class="card__img" src="./assets/cards/git.png" alt="example article" />
-                        <article class="card__content">
-                            <h3 class="content__title">Migrating to Github actions for rails CI</h3>
-                            <p class="content__text">
-                                RubyCI is tragically shutting down, so I am migrating to Rails
-                                CI
-                            </p>
-                            <div class="content__info">
-                                <img src="./assets/cards/avatar.png" alt="example avatar" />
-                                <aside class="info__aside">
-                                    <p>Phil</p>
-                                    <p>October 2nd 2022</p>
-                                </aside>
-                                <a href="">Read More</a>
-                            </div>
-                        </article>
-                    </div>
-                </div>
+
+					<div class="grid__card">
+						<img
+							class="card__img"
+							src="./assets/cards/git.png"
+							alt="example article"
+						/>
+						<article class="card__content">
+							<h3 class="content__title">
+								Migrating to Github actions for rails CI
+							</h3>
+							<p class="content__text">
+								RubyCI is tragically shutting down, so I am migrating to Rails
+								CI
+							</p>
+							<div class="content__info">
+								<img src="./assets/cards/avatar.png" alt="example avatar" />
+								<aside class="info__aside">
+									<p>Phil</p>
+									<p>October 2nd 2022</p>
+								</aside>
+								<a href="">Read More</a>
+							</div>
+						</article>
+					</div>
+					<div class="grid__card">
+						<img
+							class="card__img"
+							src="./assets/cards/git.png"
+							alt="example article"
+						/>
+						<article class="card__content">
+							<h3 class="content__title">
+								Migrating to Github actions for rails CI
+							</h3>
+							<p class="content__text">
+								RubyCI is tragically shutting down, so I am migrating to Rails
+								CI
+							</p>
+							<div class="content__info">
+								<img src="./assets/cards/avatar.png" alt="example avatar" />
+								<aside class="info__aside">
+									<p>Phil</p>
+									<p>October 2nd 2022</p>
+								</aside>
+								<a href="">Read More</a>
+							</div>
+						</article>
+					</div>
+					<div class="grid__card">
+						<img
+							class="card__img"
+							src="./assets/cards/git.png"
+							alt="example article"
+						/>
+						<article class="card__content">
+							<h3 class="content__title">
+								Migrating to Github actions for rails CI
+							</h3>
+							<p class="content__text">
+								RubyCI is tragically shutting down, so I am migrating to Rails
+								CI
+							</p>
+							<div class="content__info">
+								<img src="./assets/cards/avatar.png" alt="example avatar" />
+								<aside class="info__aside">
+									<p>Phil</p>
+									<p>October 2nd 2022</p>
+								</aside>
+								<a href="">Read More</a>
+							</div>
+						</article>
+					</div>
+				</div>
 			</section>
 		</main>
 	</body>
