@@ -8,7 +8,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;800&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;800&display=swap"
 			rel="stylesheet"
 		/>
 		<title>Realtor Developer Page</title>
@@ -49,14 +49,14 @@
 					src="../assets/ryalto-logo-lg.png"
 					alt="ryalto logo"
 				/>
-                <!-- Would Use Javascript to Toggle Nav On Mobile Screens -->
+				<!-- Would Use Javascript to Toggle Nav On Mobile Screens -->
 				<button
 					class="header__toggle"
 					aria-label="mobile menu toggle"
 					aria-controls="nav--mobile"
 				>
-                    <span class="sr"></span>
-                </button>
+					<span class="sr"></span>
+				</button>
 				<nav>
 					<ul id=" ">
 						<li><a href="#blog">Blog</a></li>
@@ -77,8 +77,12 @@
 				</p>
 				<a class="hero__btn" href="#blog">
 					<span class="btn__text">Discover More</span>
-					<img class="btn__arrow" src="./assets/icons/chevrons-up.png" alt="scroll arrow">
-                </a>
+					<img
+						class="btn__arrow"
+						src="./assets/icons/chevrons-up.png"
+						alt="scroll arrow"
+					/>
+				</a>
 			</section>
 
 			<section class="blog" id="blog">
@@ -87,11 +91,44 @@
 					<!-- Cards Would Be Dynamically Fetched From Database -->
 
 					<div class="grid__card">
-						<img
-							class="card__img"
-							src="./assets/cards/git.png"
-							alt="example article"
-						/>
+						<picture>
+							<source srcset="./assets/cards/git.webp" />
+
+							<img
+								class="card__img"
+								src="./assets/cards/git.png"
+								alt="example article"
+							/>
+						</picture>
+						<article class="card__content">
+							<h3 class="content__title">
+								Migrating to Github actions for rails CI
+							</h3>
+							<p class="content__text">
+								RubyCI is tragically shutting down, so I am migrating to Rails
+								CI
+							</p>
+							<div class="content__info">
+								<img src="./assets/cards/avatar.png" alt="example avatar" />
+								<aside class="info__aside">
+									<p>Phil</p>
+									<p>October 2nd 2022</p>
+								</aside>
+								<a href="">Read More</a>
+							</div>
+						</article>
+					</div>
+
+					<div class="grid__card">
+						<picture>
+							<source srcset="./assets/cards/mobileshot.webp" />
+
+							<img
+								class="card__img"
+								src="./assets/cards/mobileshot.png"
+								alt="example article"
+							/>
+						</picture>
 						<article class="card__content">
 							<h3 class="content__title">
 								Migrating to Github actions for rails CI
@@ -111,11 +148,15 @@
 						</article>
 					</div>
 					<div class="grid__card">
-						<img
-							class="card__img"
-							src="./assets/cards/git.png"
-							alt="example article"
-						/>
+						<picture>
+							<source srcset="./assets/cards/opengraph.webp" />
+
+							<img
+								class="card__img"
+								src="./assets/cards/opengraph.png"
+								alt="example article"
+							/>
+						</picture>
 						<article class="card__content">
 							<h3 class="content__title">
 								Migrating to Github actions for rails CI
@@ -135,11 +176,71 @@
 						</article>
 					</div>
 					<div class="grid__card">
-						<img
-							class="card__img"
-							src="./assets/cards/git.png"
-							alt="example article"
-						/>
+						<picture>
+							<source srcset="./assets/cards/hotwire.webp" />
+
+							<img
+								class="card__img"
+								src="./assets/cards/hotwire.png"
+								alt="example article"
+							/>
+						</picture>
+						<article class="card__content">
+							<h3 class="content__title">
+								Migrating to Github actions for rails CI
+							</h3>
+							<p class="content__text">
+								RubyCI is tragically shutting down, so I am migrating to Rails
+								CI
+							</p>
+							<div class="content__info">
+								<img src="./assets/cards/avatar.png" alt="example avatar" />
+								<aside class="info__aside">
+									<p>Phil</p>
+									<p>October 2nd 2022</p>
+								</aside>
+								<a href="">Read More</a>
+							</div>
+						</article>
+					</div>
+					<div class="grid__card">
+						<picture>
+							<source srcset="./assets/cards/upgrade.webp" />
+
+							<img
+								class="card__img"
+								src="./assets/cards/upgrade.png"
+								alt="example article"
+							/>
+						</picture>
+						<article class="card__content">
+							<h3 class="content__title">
+								Migrating to Github actions for rails CI
+							</h3>
+							<p class="content__text">
+								RubyCI is tragically shutting down, so I am migrating to Rails
+								CI
+							</p>
+							<div class="content__info">
+								<img src="./assets/cards/avatar.png" alt="example avatar" />
+								<aside class="info__aside">
+									<p>Phil</p>
+									<p>October 2nd 2022</p>
+								</aside>
+								<a href="">Read More</a>
+							</div>
+						</article>
+					</div>
+					<div class="grid__card">
+						<picture>
+							<source srcset="./assets/cards/theme.webp" />
+
+							<img
+								class="card__img"
+								src="./assets/cards/theme.png"
+								alt="example article"
+							/>
+						</picture>
 						<article class="card__content">
 							<h3 class="content__title">
 								Migrating to Github actions for rails CI

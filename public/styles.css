@@ -48,11 +48,20 @@ ul {
 	gap: 0.75rem;
 }
 /* section containers */
+header,
+main {
+    margin:0 max(2rem, 8%);
+}
+
 .container__header,
 .hero,
 .blog {
 	max-width: 1100px;
-	margin: 0 max(2rem, 8%) 1.5rem;
+    margin: 0 auto 5rem;
+}
+
+.container__header {
+    margin-bottom: 1rem;
 }
 
 /* header */
@@ -72,12 +81,18 @@ ul {
 
 .container__header {
 	justify-content: space-between;
+    
 }
 
 .header__logo {
 	max-width: 106px;
 	height: 40px;
 	align-self: start;
+}
+
+.header__social {
+    max-width: 6rem;
+    padding-top: 0.5rem;
 }
 
 /* navigation & mobile toggle */
@@ -144,8 +159,9 @@ nav,
 /* blog section */
 .blog__grid {
 	display: grid;
-	gap: 1rem;
-	grid-template-columns: repeat(auto-fit, minmax(min(12rem, 100%), 1fr));
+	column-gap: 1.2rem;
+    row-gap: 2rem;
+	grid-template-columns: repeat(auto-fit, minmax(min(17rem, 100%), 1fr));
 }
 
 .grid__card {
@@ -156,12 +172,20 @@ nav,
 		0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
+.blog__title {
+    padding-bottom: 2rem;
+}
+
 .card__content {
 	padding: 0.5rem;
 }
 
 .content__title {
-	margin-top: 0;
+	margin: 0;
+}
+
+.content__text {
+    margin: 0.25rem 0 1.5rem;
 }
 
 .content__info {
@@ -180,6 +204,13 @@ nav,
 	margin: 0;
 }
 
+.card__img {
+    border-radius: 0.625rem;
+    height: 16rem;
+    width: 100%;
+    object-fit: cover;
+}
+
 /* =======
 Typography
 ======= */
@@ -193,10 +224,14 @@ header a,
 	text-decoration: none;
 }
 
-a,
-span {
+a{
 	color: var(--primary-blue);
 	font-weight: 600;
+}
+
+.btn__text {
+    font-size: 0.75rem;
+    font-weight: 400;
     transition: color 350ms ease;
 }
 
@@ -230,7 +265,7 @@ a:hover,
 /* blog  */
 .content__title {
 	font-weight: 600;
-	font-size: 1.125rem;
+	font-size: 1rem;
 	text-transform: capitalize;
 }
 
@@ -240,11 +275,15 @@ a:hover,
 }
 
 .info__aside {
-	font-size: 0.6875rem;
+	font-size: 0.6rem;
 }
 
 .info__aside p:last-child {
 	color: #9e9fa3;
+}
+
+.content__info a {
+    font-size: 0.75rem;
 }
 
 /* =====
