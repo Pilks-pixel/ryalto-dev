@@ -156,7 +156,7 @@ nav,
 	display: grid;
 	column-gap: 1.2rem;
     row-gap: 2rem;
-	grid-template-columns: repeat(auto-fit, minmax(min(17rem, 100%), 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
 }
 
 .grid__card {
